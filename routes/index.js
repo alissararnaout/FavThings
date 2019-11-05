@@ -7,7 +7,7 @@ router.get('/', (req, res) => { // req = making request, res = getting response
     // should really get the user data here and then fetch it thru, but let's try this asynchronously
     console.log('at the main route');
 
-   let query = "SELECT ID, avatar, Name, Logo, JobTitle FROM tbl_card";
+   let query = "SELECT ID, Title, Image, Description, Fact, Link FROM fav_things";
 
     sql.query(query, (err, result) => {
         if (err) { throw err; console.log(err); }
