@@ -14,7 +14,7 @@
         
         {{#each people}}
         <div class="user-panel">
-            <img class="u-avatar" src="images/{{ avatar }}" alt="avatar">
+            <img class="icon" src="images/{{ Image }}" alt="icon">
 
             <a class="u-link" href="{{ ID }}">
                 See More Info
@@ -22,6 +22,8 @@
 
             <h1>{{ Title }}</h1>
             <h3>{{ Description }}</h3>
+            <h4>{{ Fact }}</h4>
+            <h4>{{ Link }}</h4>
         </div>
         {{/each}}
         
@@ -39,5 +41,3 @@
 
         </div>
     </section>
-</section>
-<section id="section5" class="panel"></section>
