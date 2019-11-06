@@ -11,16 +11,26 @@ body {
 }
 
 h1 {
-    color: $splash-heading-color;
+    color: $splash-color;
 }
 
 h2 {
-    color: $other-heading-color;
+    color: $title-color;
 }
+
+h4 {
+    color: $desc-color;
+}
+
+h5 {
+    color: $link-color;
+}
+
+
 
 .panel { 
     min-height: 80vh; 
-    background-color: #212121;
+    background-color: #020A2F;
 }
 
 #to-top { position: fixed; bottom: 10px; right: 10px; display: none; }

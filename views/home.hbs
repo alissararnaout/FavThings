@@ -1,29 +1,22 @@
-<section id="section1" class="panel">
-    <div class="bio-info">
-    </div>
-
+<section id="splash" class="panel">
+<img id="splashImg" src="/images/bckgrnd.png" alt="">
 </section>
-{{!-- <section id="section2" class="panel">panel 2</section> --}}
-<section id="section3" class="panel">
-    
 
 
     <div class="team">
-        <!-- loop through all our team members and put their info on the page -->
-        <!-- this is exactly like a forEach loop with plain JS -->
         
         {{#each people}}
         <div class="user-panel">
             <img class="icon" src="images/{{ Image }}" alt="icon">
 
             <a class="u-link" href="{{ ID }}">
-                See More Info
+                Did You Know?
             </a>
 
-            <h1>{{ Title }}</h1>
-            <h3>{{ Description }}</h3>
+            <h2>{{ Title }}</h2>
+            <h4>{{ Description }}</h4>
             <h4>{{ Fact }}</h4>
-            <h4>{{ Link }}</h4>
+            <h5>{{ Link }}</h5>
         </div>
         {{/each}}
         
