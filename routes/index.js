@@ -23,7 +23,7 @@ router.get('/users/:id', (req, res) => { // colon is a dynamic placeholder, what
     console.log('hit a dynamic route');
     console.log(req.params.id);
    
-   let query = `SELECT * FROM tbl_bio WHERE profID="${req.params.id}"`;
+   let query = `SELECT * FROM fav_things WHERE ID="${req.params.id}"`;
 
     sql.query(query, (err, result) => {
         if (err) { throw err; console.log(err); }
