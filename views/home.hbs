@@ -9,14 +9,16 @@
         <div class="user-panel">
             <img class="icon" src="images/{{ Image }}" alt="icon">
 
-            <a class="u-link" href="{{ ID }}">
-                Did You Know?
-            </a>
+        
 
             <h2>{{ Title }}</h2>
             <h4>{{ Description }}</h4>
+
+             <a class="u-link" href="{{ ID }}">
+                Did You Know?
+            </a>
             <h4>{{ Fact }}</h4>
-            <h5>{{ Link }}</h5>
+            <h5><a href="https://en.wikipedia.org/wiki/Monkey_selfie_copyright_dispute">{{ Link }}</a></h5>
         </div>
         {{/each}}
         
