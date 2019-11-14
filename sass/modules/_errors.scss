@@ -1,10 +1,13 @@
 body {
-    background-color: black;
     color: white;
 }
 
 .error-section a {
     color: white;
     text-decoration: none;
-    background-image: url(/public/images/error_bckgrnd.png);
+    width: 100%;
+}
+
+#errorSplash {
+    width: 100%;
 }

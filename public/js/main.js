@@ -3,7 +3,7 @@
 const myVM = (() => {
     // get the user buttons and fire off an async DB query with Fetch
     let userButtons = document.querySelectorAll('.u-link'),  // grab buttons with class of u-link
-        lightbox = document.querySelector('.lightbox');
+        // lightbox = document.querySelector('.lightbox');
 
 function renderSocialMedia(socialMedia) {
     return `<ul class="u-social">
@@ -14,7 +14,7 @@ function renderSocialMedia(socialMedia) {
 function parseUserData(person) { // person is the database result
         // UX/UI would be added in here, e.g. loading animations, etc.
     let targetDiv = document.querySelector('.lb-content'),
-        targetImg = lightbox.querySelector('img');
+        //targetImg = lightbox.querySelector('img');
 
     let bioContent = `
         <p>${person.bio}</p>
@@ -26,7 +26,7 @@ function parseUserData(person) { // person is the database result
     targetDiv.innerHTML = bioContent;
     targetImg.src = person.imgsrc;
 
-    lightbox.classList.add('show-lb');
+    //lightbox.classList.add('show-lb');
 }
 
     function getUserData(event) {  // get user data/property to make our query
@@ -64,8 +64,8 @@ function parseUserData(person) { // person is the database result
 
     userButtons.forEach(button => button.addEventListener('click', getUserData))
 
-    lightbox.querySelector('.close').addEventListener('click', function() {
-        lightbox.classList.remove('show-lb');
-    });
+    //lightbox.querySelector('.close').addEventListener('click', function() {
+       // lightbox.classList.remove('show-lb');
+    //});
 
 })();
